@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Joker | Interactive Profile</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+body{
+    background:#0b0f1a;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+.card{
+    background:#11162a;
+    width:320px;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 0 40px rgba(0,234,255,.25);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 60px rgba(0,234,255,.45);
+}
+
+.image-box{
+    position:relative;
+    width:120px;
+    height:120px;
+    margin:0 auto 15px;
+}
+
+.image-box img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    transition:.4s ease;
+    box-shadow:0 0 25px #00eaff;
+}
+
+.hover-img{
+    opacity:0;
+}
+
+.image-box:hover .main-img{
+    opacity:0;
+    transform:scale(.9);
+}
+
+.image-box:hover .hover-img{
+    opacity:1;
+    transform:scale(1.08);
+    border-radius:12px;
+}
+
+h2{
+    margin:10px 0 5px;
+    font-size:22px;
+}
+
+p{
+    font-size:14px;
+    opacity:.8;
+    margin-bottom:20px;
+}
+
+
+.socials{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    opacity:0;
+    transform:translateY(10px);
+    transition:.4s;
+}
+
+.card:hover .socials{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.socials a{
+    width:45px;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:20px;
+    color:#fff;
+    box-shadow:0 0 15px rgba(0,234,255,.4);
+    transition:.3s;
+}
+
+.fb{ background:#1877f2; }
+.gh{ background:#24292e; }
+.wa{ background:#25d366; }
+
+.socials a:hover{
+    transform:scale(1.15);
+    filter:brightness(1.15);
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="image-box">
+        <img src="1000002406.jpg" class="main-img" alt="Profile">
+        <img src="12.21.35_53023cff.jpg" class="hover-img" alt="Profile Hover">
+    </div>
+
+    <h2>Joker</h2>
+    <p>Full-Stack Developer</p>
+
+    <div class="socials">
+        <a href="https://www.facebook.com/share/17c7P4XZAg/" target="_blank" class="fb">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://github.com/sdsr2205-has" target="_blank" class="gh">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://wa.me/201556442349?text=Hello%20Joker" target="_blank" class="wa">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
